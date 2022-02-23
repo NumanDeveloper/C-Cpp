@@ -1,0 +1,8 @@
+# ignore all .exe files 
+*.exe
+# ignore all these files 
+*tempCodeRunnerFile.c
+# ignore all these files 
+*tempCodeRunnerFile.cpp
+# ignore .vscode directory
+.vscode/
