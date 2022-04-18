@@ -1,24 +1,27 @@
 #include <iostream>
 using namespace std;
 
-bool leapYear(int year)
-{
-    bool isLeap = false;
-    if (year % 4 == 0)
-    {
-        if (year % 100 == 0)
-        {
-            if (year % 400 == 0)
-                isLeap = true;
-        }
-        else
-            isLeap = true;
-    }
-
-    return isLeap;
-}
+void leapYear(int x);
 int main()
 {
-    (leapYear(2014) ? cout << "Leap year" : cout << "Not a Leap Year");
+    leapYear(2024);
     return 0;
+}
+
+void leapYear(int x)
+{
+    if (x % 4 == 0)
+    {
+        if (x % 100 == 0)
+        {
+            if (x % 400 == 0)
+                cout << "Leap";
+            else
+                cout << "Not";
+        }
+        else
+            cout << "Leap";
+    }
+    else
+        cout << "Not";
 }
