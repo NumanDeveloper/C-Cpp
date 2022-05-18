@@ -6,7 +6,7 @@ class Factorial
     int fact = 1;
 
 public:
-    Factorial(int x)
+    Factorial(int x) // parameterized constructor
     {
         while (x >= 1)
         {
@@ -25,7 +25,7 @@ int main()
 {
     system("cls");
 
-    Factorial of(6);
+    Factorial of(6); // of is an object of Factorial class
     of.display();
 
     return 0;
