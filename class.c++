@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 
-class test
+class Test
 {
 private:
     int x;
 public:
     // parameterized constructor 
-    test(int a){
+    Test(int a){
         x = a;
     }
 
@@ -17,7 +17,7 @@ public:
 };
 
 int main(){
-    test t(40);
+    Test t(40);
     t.print();
 
     return 0;

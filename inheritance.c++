@@ -20,7 +20,7 @@ public:
 };
 
 int main()
-{
+{   // creating derived class' object
     Car myCar;
     myCar.honk();
     cout << myCar.brand + " " + myCar.model;

@@ -1,20 +1,20 @@
 #include <iostream>
 using namespace std;
 
-void bubble_sort(int*, int);
-void print_array(int*, int);
+void bubbleSort(int*, int);
+void printArray(int*, int);
 
 int main(){
     int arr[] = {-2, 45, 20, 11, 14, 12, -9};
     int size = sizeof(arr)/sizeof(int);
 
-    print_array(arr, size);
-    bubble_sort(arr, size);
-    print_array(arr, size);
+    printArray(arr, size);
+    bubbleSort(arr, size);
+    printArray(arr, size);
 
     return 0;
 }
-void bubble_sort(int* arr, int size){
+void bubbleSort(int* arr, int size){
     int temp;
     // outer loop is for passes
     // # of passes is always equal to size-1
@@ -31,7 +31,7 @@ void bubble_sort(int* arr, int size){
     }
 }
 
-void print_array(int* arr, int size){
+void printArray(int* arr, int size){
     for(int i=0; i<size; i++)
         cout<<arr[i]<<" | ";
     cout<<"\n";

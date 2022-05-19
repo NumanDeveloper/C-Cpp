@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// TODO: Write a program that declares a structure Book having id, price and book as its data members. Declare an array of structure and take data of 5 books and display the record of most costly book
+// TODO: Write a program that declares a structure 'Book' having id, price and pages as its data members. Declare an array of structure and take data of 5 books and display the record of most costly book
 
 struct Book
 {
@@ -17,17 +17,17 @@ int main()
     // Taking book data from user
     for (int i = 0; i < 5; i++)
     {
-        cout << "Book ID: ";
+        cout << i+1 << ". Book ID: ";
         cin >> A[i].id;
-        cout << "Book Pages: ";
+        cout << i+1 << ". Book Pages: ";
         cin >> A[i].pages;
-        cout << "Book Price: ";
+        cout << i+1 << ". Book Price: ";
         cin >> A[i].price;
     }
 
     // assigning first book to maxPriceBook
     maxPriceBook = A[0];
-    for (int i = 0; i < 5; i++)
+    for (int i = 1; i < 5; i++)
     {
         if (maxPriceBook.price < A[i].price)
         {
