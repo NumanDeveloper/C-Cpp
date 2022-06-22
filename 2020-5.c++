@@ -16,6 +16,7 @@ class Factorial{
         cout<<"Factorial: "<<fact<<endl;
     }
 };
+
 int main(){
     Factorial f(5);
     f.show();

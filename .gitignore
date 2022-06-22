@@ -4,6 +4,7 @@
 *tempCodeRunnerFile.c
 # ignore all these files 
 *tempCodeRunnerFile.cpp
+*tempCodeRunnerFile.c++
 # ignore .vscode directory
 .vscode/
 .editorconfig

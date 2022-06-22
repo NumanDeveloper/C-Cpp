@@ -20,11 +20,12 @@ public:
         return (x * y);
     }
 };
+
 int main()
 {
     Add a;
     Multiply m;
-    // m can use add(), but a can't use multiply()
+    // 'm' can use add(), but 'a' can't use multiply()
     cout << m.add(5, 10) << endl;
     cout << m.multiply(5, 10) << endl;
 
