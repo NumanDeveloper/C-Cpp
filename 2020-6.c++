@@ -25,9 +25,10 @@ int main()
 {
     Add a;
     Multiply m;
-    // 'm' can use add(), but 'a' can't use multiply()
-    cout << m.add(5, 10) << endl;
-    cout << m.multiply(5, 10) << endl;
+    // 'm' can use add(), but 'a' can not use multiply()
+    cout << "Addition: " << m.add(5, 10) << endl;
+    cout << "Addition: " << a.add(5, 6) << endl;
+    cout << "Multiplication: " << m.multiply(5, 10) << endl;
 
     return 0;
 }
