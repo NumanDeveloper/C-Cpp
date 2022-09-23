@@ -1,2 +1,4 @@
 # C/C++
-This repo contains C/C++ practice codes
+- C/C++ practice codes
+- exam solution codes
+- `UOG's` codes
