@@ -9,8 +9,9 @@ float perimeter(float r)
 
 float perimeter(float l, float w)
 {
-    return 2 * l * w;
+    return 2 * (l + w);
 }
+
 int main()
 {
     float pOfCircle = perimeter(10);
@@ -18,6 +19,6 @@ int main()
 
     cout << "Perimeter of circle is: " << pOfCircle << endl;
     cout << "Perimeter of rectangle is: " << pOfRect << endl;
-    
+
     return 0;
 }
