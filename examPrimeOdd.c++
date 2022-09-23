@@ -5,10 +5,14 @@ int isPrime(int n);
 
 int main()
 {
-    int m, n;
-    cout << "Enter value of m and n: ";
-    cin >> m >> n;
-    for (int i = m; i <= n; i++)
+    int first, last;
+
+    cout << "Enter first number: ";
+    cin >> first;
+    cout << "Enter last number: ";
+    cin >> last;
+
+    for (int i = first; i <= last; i++)
     {
         if (i % 2 == 1)
             cout << "odd: " << i << endl;
@@ -20,13 +24,15 @@ int main()
 
 int isPrime(int n)
 {
-    int count = 0;
+    int flag = 1;
     for (int i = 2; i < n; i++)
     {
-        if (n % i == 0)
-            count++;
+        if (n % i == 0){
+            flag = 0;
+            break;
+        }
     }
-    if (count == 0)
+    if (flag)
         return 1;
     else
         return 0;
