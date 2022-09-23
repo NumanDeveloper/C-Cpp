@@ -21,7 +21,7 @@ public:
 
 int main()
 {
-    /*
+    /**
      * static functions don't require any object
      * and can be called with just class only
      * using scope resolution operator `::`
