@@ -12,16 +12,18 @@ struct Book
 
 int main()
 {
-    Book A[5], maxPriceBook, temp; // for swapping prices
+    Book A[5],
+        maxPriceBook,
+        temp; // for swapping prices
 
     // Taking book data from user
     for (int i = 0; i < 5; i++)
     {
-        cout << i+1 << ". Book ID: ";
+        cout << i + 1 << ". Book ID: ";
         cin >> A[i].id;
-        cout << i+1 << ". Book Pages: ";
+        cout << i + 1 << ". Book Pages: ";
         cin >> A[i].pages;
-        cout << i+1 << ". Book Price: ";
+        cout << i + 1 << ". Book Price: ";
         cin >> A[i].price;
     }
 
@@ -31,13 +33,14 @@ int main()
     {
         if (maxPriceBook.price < A[i].price)
         {
+            // swapping
             temp = maxPriceBook;
             maxPriceBook = A[i];
             A[i] = temp;
         }
     }
 
-    // Displaying most costly book record
+    // Displaying `most costly` book record
     cout << "\nRecord of most costly book is below:\n";
     cout << "Book ID: " << maxPriceBook.id << endl;
     cout << "Book Pages: " << maxPriceBook.pages << endl;
