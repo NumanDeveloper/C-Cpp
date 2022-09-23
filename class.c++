@@ -5,18 +5,22 @@ class Test
 {
 private:
     int x;
+
 public:
-    // parameterized constructor 
-    Test(int a){
+    // parameterized constructor
+    Test(int a)
+    {
         x = a;
     }
 
-    void print(){
-        cout<<x;
+    void print()
+    {
+        cout << x;
     }
 };
 
-int main(){
+int main()
+{
     Test t(40);
     t.print();
 
