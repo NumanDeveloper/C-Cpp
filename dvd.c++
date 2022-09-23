@@ -25,7 +25,7 @@ public:
         cout << "Retail Price: " << retailPrice << endl;
     }
 
-    void change(string name, int c, int p)
+    void changeData(string name, int c, int p)
     {
         brandName = name;
         capacity = c;
@@ -40,7 +40,7 @@ int main()
     DVD obj1("The harry porter", 500, 300);
 
     obj1.display();
-    obj1.change("Money Heist", 1000, 400);
+    obj1.changeData("Money Heist", 1000, 400);
     obj1.display();
 
     return 0;
