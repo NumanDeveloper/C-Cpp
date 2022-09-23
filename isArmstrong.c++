@@ -3,18 +3,20 @@ using namespace std;
 
 // * Armstrong Number Checker * //
 /*
- * A number is armstrong if the sum of cube of its digits is equal to the number
- * itself.
+ * A number is armstrong if the sum of cube of its digits
+ * is equal to the number itself.
  */
 
 bool isArmstrong(int n);
-int main() {
+int main()
+{
     cout << (isArmstrong(371) ? "Armstrong" : "Not Armstrong");
 
     return 0;
 }
 
-bool isArmstrong(int n) {
+bool isArmstrong(int n)
+{
     int sum = 0, t, d;
     t = n;
 
